@@ -1,7 +1,8 @@
-#include "cointray.h"
 #include "ESP8266.h"
 #include <SoftwareSerial.h>
+#include "wifi.h"
 
+static int debug = 0;
 
 SoftwareSerial wifiserial(3, 2);
 ESP8266 wifi(wifiserial);
